@@ -1434,3 +1434,6 @@ if os.path.exists(ADDITIONAL_CONFIG):
     with open(ADDITIONAL_CONFIG) as handle:
         code = compile(handle.read(), ADDITIONAL_CONFIG, "exec")
         exec(code)  # noqa: S102
+
+# Fix csrf behind reverse proxy
+CSRF_TRUSTED_ORIGINS = get_env_list("WEBLATE_CSRF_TRUSTED_ORIGINS")
