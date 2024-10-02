@@ -10,7 +10,7 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 # Used by docker-compose-plugin
-WEBLATE_PORT=8080
+WEBLATE_PORT=8093
 export WEBLATE_PORT
 WEBLATE_HOST=localhost:$WEBLATE_PORT
 export WEBLATE_HOST
